@@ -81,7 +81,7 @@ Aimbot.Update = function()
     Outline.Position = Circle.Position
 
     if Target then
-        local Delta = (Target - UserInputService:GetMouseLocation()) * 0.5
+        local Delta = (Target - MouseLocation) * 0.5
         mousemoverel(Delta.X, Delta.Y)
     end
 end
